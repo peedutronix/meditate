@@ -1,0 +1,43 @@
+# Meditation App - Project Roadmap & Architecture
+
+Welcome to the project! As your senior manager, I've outlined a high-level technical plan and architecture for our meditation app. Our goal is to use open-source, free-to-use tools suitable for learning.
+
+## Goal Description
+Develop a cross-platform meditation app starting with a Web MVP (Minimum Viable Product), eventually expanding to Android and iOS. The Phase 1 MVP will focus on a beautiful UI, user authentication via social logins (Google, Facebook), and a core meditation feature (e.g., a timer or tracker).
+
+## User Review Required
+> [!IMPORTANT]
+> Since you are the PM intern handling this project, please review these technology and feature choices. Let me know if you approve this stack or if you'd like to explore alternatives!
+
+## Proposed Tech Stack (Open Source & Free)
+
+Since we want to avoid paid subscriptions, here is the optimal stack for a learning PM/Developer:
+
+1. **Frontend (Phase 1 - Web)**: 
+   - **Next.js (React)**: An industry-standard framework. It's powerful, easy to learn, and transitioning from React (Web) to React Native (Android/iOS) in Phase 2 will be a natural step.
+   - **Styling**: Vanilla CSS. We will focus on building a premium, calming, and beautiful UI from scratch, utilizing smooth gradients and micro-animations to wow our users.
+
+2. **Backend, Database & Authentication**: 
+   - **Supabase**: This is a powerful open-source alternative to Firebase. It has a very generous free tier and built-in support for Google, Facebook, and other social logins. We won't need to write complex backend servers from scratch.
+
+3. **Hosting (Phase 1)**:
+   - **Vercel** or **Netlify**: Both offer free hosting for web applications and integrate perfectly with Next.js.
+
+## Proposed Changes / Phases
+
+### Phase 1: Web MVP (Current Focus)
+- [NEW] Initialize Next.js project.
+- [NEW] Set up design system (colors, typography for a calming meditation vibe).
+- [NEW] Integrate Supabase for backend.
+- [NEW] Implement Authentication (Google/Facebook login).
+- [NEW] Build the User Profile page.
+- [NEW] Build the Core Feature (A simple, beautiful meditation timer with soothing animations).
+
+### Phase 2: Mobile Expansion (Future)
+- Once Phase 1 is well tested, we will build out the mobile application using **React Native (Expo)** to deploy to Android and iOS simultaneously, reusing much of the logical understanding from Phase 1.
+
+## Verification Plan
+### Automated Tests
+- We will set up basic component tests using Jest to ensure our UI components render correctly.
+### Manual Verification
+- You (as the PM) will test the web app locally before we deploy. We will verify that logins work correctly without errors.
