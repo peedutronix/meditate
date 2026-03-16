@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <Link href="/login" className="text-sm font-medium hover:text-teal-300 transition-colors">Log In</Link>
-          <Link href="/login" className="text-sm font-medium bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-md transition-all">Sign Up</Link>
+          <Link href="/signup" className="text-sm font-medium bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-md transition-all">Sign Up</Link>
         </div>
       </nav>
 
