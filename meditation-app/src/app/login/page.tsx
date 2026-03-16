@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Wind, ArrowRight } from "lucide-react";
+import { login } from "@/app/auth/actions";
 
 export default function LoginPage() {
     return (
@@ -25,11 +26,12 @@ export default function LoginPage() {
                         <p className="text-sm text-slate-400">Enter your details to sign in to your account.</p>
                     </div>
 
-                    <form className="space-y-6">
+                    <form className="space-y-6" action={login}>
                         <div className="space-y-2">
                             <label htmlFor="email" className="text-sm font-medium text-slate-300">Email address</label>
                             <input
                                 id="email"
+                                name="email"
                                 type="email"
                                 placeholder="you@email.com"
                                 className="w-full px-4 py-3 bg-slate-950/50 border border-slate-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500 text-slate-100 placeholder:text-slate-600 transition-all"
@@ -44,6 +46,7 @@ export default function LoginPage() {
                             </div>
                             <input
                                 id="password"
+                                name="password"
                                 type="password"
                                 placeholder="••••••••"
                                 className="w-full px-4 py-3 bg-slate-950/50 border border-slate-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-teal-500 text-slate-100 placeholder:text-slate-600 transition-all"
