@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-slate-100 via-slate-300 to-teal-200 mb-6 drop-shadow-sm">
-          Find your inner peace in a noisy world.
+          Meditate
         </h1>
 
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed">
